@@ -42,7 +42,7 @@ function setBackgroundAndGreet(){
 
     if (hourOfTheDay < 12){
 
-        document.body.style.backgroundImage = "url('../img/morning.jpg')";
+        document.body.style.backgroundImage = "url('img/morning.jpg')";
         setBackgroundAttributes();
 
         greeting.textContent = "Good morning";
