@@ -56,7 +56,7 @@ function setBackgroundAndGreet(){
 
     } else {
 
-        document.body.style.backgroundImage = "url(../img/evening.jpg)" ;
+        document.body.style.backgroundImage = "url(../../img/evening.jpg)" ;
         setBackgroundAttributes();
 
         greeting.textContent = "Good evening";
