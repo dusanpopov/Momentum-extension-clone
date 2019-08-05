@@ -31,7 +31,7 @@ function displayCurrentTime(){
 function setBackgroundAttributes(){
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
-     document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundPosition = "center";
 }
 
 
@@ -42,7 +42,7 @@ function setBackgroundAndGreet(){
 
     if (hourOfTheDay < 12){
 
-        document.body.style.backgroundImage = "url('../../img/morning.jpg')";
+        document.body.style.backgroundImage = "url('../img/morning.jpg')";
         setBackgroundAttributes();
 
         greeting.textContent = "Good morning";
@@ -56,7 +56,7 @@ function setBackgroundAndGreet(){
 
     } else {
 
-        document.body.style.backgroundImage = "url('../../img/evening.jpg')" ;
+        document.body.style.backgroundImage = "url(../img/evening.jpg)" ;
         setBackgroundAttributes();
 
         greeting.textContent = "Good evening";
