@@ -42,21 +42,21 @@ function setBackgroundAndGreet(){
 
     if (hourOfTheDay < 12){
 
-        document.body.style.backgroundImage = "url('../img/morning.jpg')";
+        document.body.style.backgroundImage = "url('../../img/morning.jpg')";
         setBackgroundAttributes();
 
         greeting.textContent = "Good morning";
 
     } else if (hourOfTheDay < 18){
 
-        document.body.style.backgroundImage = "url('../img/afternoon.jpg')";
+        document.body.style.backgroundImage = "url('../../img/afternoon.jpg')";
         setBackgroundAttributes();
 
         greeting.textContent = "Good afternoon";
 
     } else {
 
-        document.body.style.backgroundImage = "url(../img/evening.jpg)" ;
+        document.body.style.backgroundImage = "url(../../img/evening.jpg)" ;
         setBackgroundAttributes();
 
         greeting.textContent = "Good evening";
