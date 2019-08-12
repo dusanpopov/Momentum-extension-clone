@@ -49,7 +49,7 @@ function setBackgroundAndGreet(){
 
     } else if (hourOfTheDay < 18){
 
-        document.body.style.backgroundImage = "url('../../img/afternoon.jpg')";
+        document.body.style.backgroundImage = "url('../img/afternoon.jpg')";
         setBackgroundAttributes();
 
         greeting.textContent = "Good afternoon";
