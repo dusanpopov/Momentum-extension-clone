@@ -23,7 +23,6 @@ function displayCurrentTime(){
     setTimeout(displayCurrentTime, 1000);
 }
 
-
 function setBackgroundAttributes(){
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
