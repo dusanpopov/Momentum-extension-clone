@@ -18,7 +18,6 @@ function displayCurrentTime(){
     seconds = `${seconds < 10 ? "0" : ""}${seconds}`;
 
     let currentTime = `${hour}:${minutes}:${seconds}`;
-
     time.textContent = currentTime;
 
     setTimeout(displayCurrentTime, 1000);
@@ -30,7 +29,6 @@ function setBackgroundAttributes(){
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center";
 }
-
 
 function setBackgroundAndGreet(){
     let today = new Date();
