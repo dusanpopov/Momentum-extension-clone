@@ -3,16 +3,15 @@ const greeting = document.querySelector(".greeting");
 const name = document.querySelector(".name");
 const focus = document.querySelector(".focus");
 
-function displayCurrentTime(){
+const displayCurrentTime = () =>{
     let today = new Date();
     let hour = today.getHours();
     let minutes = today.getMinutes();
     let seconds = today.getSeconds();
 
     if(hour >= 12)
-        hour = hour
-    }
 
+    hour = hour
     hour = `${hour < 10 ? "0" : ""}${hour}`;
     minutes = `${minutes < 10 ? "0" : ""}${minutes}`;
     seconds = `${seconds < 10 ? "0" : ""}${seconds}`;
@@ -23,13 +22,14 @@ function displayCurrentTime(){
     setTimeout(displayCurrentTime, 1000);
 }
 
-function setBackgroundAttributes(){
+
+const setBackgroundAttributes = () =>{
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center";
 }
 
-function setBackgroundAndGreet(){
+const setBackgroundAndGreet = () =>{
     let today = new Date();
     let hourOfTheDay = today.getHours();
 
@@ -49,7 +49,7 @@ function setBackgroundAndGreet(){
     }
 }
 
-function getName(){
+const getName = () =>{
     if(localStorage.getItem("name") === null){
         name.textContent = "[Enter name]";
     } else {
@@ -57,7 +57,7 @@ function getName(){
     }
 }
 
-function setName(e){
+const setName = (e) =>{
     if(e.type === "keypress"){
         if(e.keyCode === 13){
             localStorage.setItem("name", e.target.innerText);
@@ -68,7 +68,7 @@ function setName(e){
     }
 }
 
-function getFocus(){
+const getFocus = () =>{
     if(localStorage.getItem("focus") === null){
         focus.textContent = "[Enter focus]";
     } else {
@@ -76,7 +76,7 @@ function getFocus(){
     }
 }
 
-function setFocus(e){
+const setFocus = (e) =>{
     if(e.type === "keypress"){
         if(e.keyCode === 13){
             localStorage.setItem("focus", e.target.innerText);
