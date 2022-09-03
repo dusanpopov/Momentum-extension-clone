@@ -3,7 +3,7 @@ const greeting = document.querySelector(".greeting");
 const name = document.querySelector(".name");
 const focus = document.querySelector(".focus");
 
-const displayCurrentTime = () =>{
+const displayCurrentTime = () => {
     let today = new Date();
     let hour = today.getHours();
     let minutes = today.getMinutes();
